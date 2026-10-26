@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vasco Duarte Nunes</title>
+<style>
+  :root {
+    --ink: #1f2420;
+    --soft: #5c6660;
+    --bg: #f7f5f0;
+    --card: #ffffff;
+    --line: #e4e0d8;
+    --accent: #2e6b4f;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  header {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    padding: 64px 0 40px;
+    flex-wrap: wrap;
+  }
+  header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+    border: 4px solid var(--card);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  }
+  header .intro { flex: 1; min-width: 240px; }
+  h1 { font-size: 2.3rem; line-height: 1.15; letter-spacing: -0.5px; }
+  .tagline { color: var(--accent); font-weight: 600; margin-top: 6px; font-size: 1.05rem; }
+
+  section { padding: 28px 0; border-top: 1px solid var(--line); }
+  h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--soft);
+    margin-bottom: 16px;
+  }
+  p + p { margin-top: 12px; }
+
+  .role { font-weight: 600; }
+  .meta { color: var(--soft); font-size: 0.92rem; margin-bottom: 10px; }
+  ul { list-style: none; }
+  li {
+    position: relative;
+    padding-left: 20px;
+    margin-top: 8px;
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 12px;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .block + .block { margin-top: 22px; }
+
+  .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 28px; }
+  @media (max-width: 520px) { .facts { grid-template-columns: 1fr; } }
+  .facts div span { color: var(--soft); display: block; font-size: 0.85rem; }
+
+  .contact a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .contact a:hover { text-decoration: underline; }
+  .contact div { margin-top: 6px; }
+
+  footer { padding: 40px 0 60px; color: var(--soft); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="photo.png" alt="Photo of Vasco Duarte Nunes">
+    <div class="intro">
+      <h1>Vasco Duarte Nunes</h1>
+      <p class="tagline">Finance student and real estate analyst in Portugal</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>About me</h2>
+    <p>I am Vasco. I am 20 and Portuguese.</p>
+    <p>I study finance. I did a bachelor in business. Now I am doing a master in finance at Esade.</p>
+    <p>I was a triathlete from a young age. This year I set the sport aside to focus on my studies. I still run about 60 km a week, and I want to do a half marathon.</p>
+  </section>
+
+  <section>
+    <h2>Work</h2>
+    <div class="block">
+      <p class="role">Investment &amp; Operations Analyst — Lisbon Developments</p>
+      <p class="meta">Real estate and asset management · Lisbon · since January 2022</p>
+      <ul>
+        <li>Worked on Quarteirão Inglês, a 16-apartment and palacete redevelopment in central Lisbon, across construction, legal, and commercial work.</li>
+        <li>Supported asset management on a portfolio of 16+ homes and shops, including valuation inputs and occupancy.</li>
+        <li>Looked at capital allocation and risk across 3+ investment decisions.</li>
+        <li>Reviewed rent income and cost forecasts for 16+ units for monthly reporting.</li>
+        <li>Managed relationships with 20+ international tenants and kept occupancy high.</li>
+      </ul>
+    </div>
+    <div class="block">
+      <p class="role">Events &amp; Marketing Coordinator — Católica Students' Union</p>
+      <p class="meta">Student association · Lisbon · September 2023 – June 2026</p>
+      <ul>
+        <li>Planned logistics and marketing for student events of 100+ people, leading a team start to finish.</li>
+        <li>Built communication across digital channels to grow student engagement.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="block">
+      <p class="role">MSc in Finance — Esade Business &amp; Law School, Barcelona</p>
+      <p class="meta">September 2026 – October 2027</p>
+    </div>
+    <div class="block">
+      <p class="role">Bachelor in Business Administration and Management — Católica Lisbon</p>
+      <p class="meta">September 2023 – June 2026</p>
+      <p>Coursework: Corporate Finance, Finance I &amp; II, Accounting, Economics.</p>
+    </div>
+    <div class="block">
+      <p class="role">Erasmus Exchange — Esade Business School, Barcelona</p>
+      <p class="meta">August 2025 – January 2026</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sport</h2>
+    <p>I was an elite triathlete with Clube Olímpico de Oeiras, on the Portuguese National Team.</p>
+    <ul>
+      <li>Senior titles: 1st (2021), 2nd (2022), 3rd (2023 and 2025).</li>
+      <li>Team Vice-National Champion three years in a row.</li>
+      <li>Trained about 20 hours a week. It built my discipline and calm under pressure.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Languages &amp; skills</h2>
+    <div class="facts">
+      <div><span>Portuguese</span>Native</div>
+      <div><span>English</span>Fluent</div>
+      <div><span>Spanish</span>Intermediate</div>
+      <div><span>Microsoft Excel</span>Intermediate</div>
+      <div><span>Analytical thinking</span>Advanced</div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <div><a href="mailto:vascoduartenunes@alumni.esade.edu">vascoduartenunes@alumni.esade.edu</a></div>
+    <div><a href="mailto:vasconunesduarte@gmail.com">vasconunesduarte@gmail.com</a></div>
+    <div><a href="https://linkedin.com/in/vascoduartenunes" target="_blank" rel="noopener">linkedin.com/in/vascoduartenunes</a></div>
+  </section>
+
+  <footer>
+    Portuguese · EU work permit · Available from June 2027
+  </footer>
+
+</div>
+</body>
+</html>
